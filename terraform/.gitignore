@@ -1,0 +1,15 @@
+# Claude Code local settings
+
+.claude/settings.local.json
+
+# Terraform
+
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+tfplan
+crash.log
+
+

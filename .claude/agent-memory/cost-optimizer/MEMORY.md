@@ -1,0 +1,4 @@
+- [CloudFront PriceClass Optimization](cloudfront-price-class-optimization.md) — PriceClass_200 over-provisioned; downgrade to PriceClass_100 for 40% savings
+- [DynamoDB Billing Mode for Locks](dynamodb-billing-mode-lock-table.md) — Use on-demand billing when bootstrap.tf creates lock table
+- [S3 Versioning & Lifecycle Tradeoff](s3-versioning-lifecycle-tradeoff.md) — If versioning enabled (security), add lifecycle rule to prevent cost accumulation
+- [Portfolio Cost Assessment](portfolio-cost-assessment.md) — Full cost breakdown and optimization priorities for static site infrastructure

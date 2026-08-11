@@ -1,0 +1,4 @@
+- [Terraform security baseline (2026-08-06)](terraform_baseline_2026-08-06.md) — what's solid vs. open gaps in terraform/, use to track remediation over audits
+- [IAM/OIDC scope gap](iam_oidc_scope_gap.md) — GitHub OIDC/IAM role not implemented yet as of 2026-08-06, don't misreport as a misconfiguration
+- [Gitignore state exposure](gitignore_state_exposure.md) — terraform/.gitignore double-anchoring bug leaves tfstate/.terraform unignored; confirmed real, not fixed yet (2026-08-07)
+- [settings.local.json public exposure](settings_local_json_public_exposure.md) — stray .claude/skills/settings.local.json missed by narrow global gitignore anchor, pushed to public repo; content clean so far, history unverified (2026-08-11)

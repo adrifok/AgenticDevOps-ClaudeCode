@@ -1,0 +1,3 @@
+- [Severity calibration for this project](severity-calibration.md) — personal low-traffic portfolio site; WAF/KMS/custom-domain hardening is LOW, not HIGH/CRITICAL
+- [OIDC trust baseline](oidc-trust-baseline.md) — known-good repo/branch scoping in github-oidc.tf, diff future changes against this
+- [Known open findings log](open-findings-log.md) — gaps found per audit date, so re-audits can confirm fixed vs still-open

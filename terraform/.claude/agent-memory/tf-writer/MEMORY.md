@@ -1,0 +1,1 @@
+- [Tool access limits](tool-access-limits.md) — tf-writer has no Bash/execution tools; can't run terraform fmt/validate/plan itself

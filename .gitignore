@@ -1,0 +1,4 @@
+.mcp.json
+terraform.tfstate
+terraform.tfstate.backup
+**/settings.local.json

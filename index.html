@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud & DevOps Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+
+      <!-- Logo -->
+      <div class="nav-logo" onclick="goToSection('home')">
+        <span class="brand-text">Portfolio</span>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact" class="contact-btn">Contact</a>
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">
+        ☰
+      </div>
+
+    </div>
+    <div id="mobileMenu" class="mobile-menu">
+      <button onclick="goToSection('home')">Home</button>
+      <button onclick="goToSection('about')">About</button>
+      <button onclick="goToSection('services')">Services</button>
+      <button onclick="goToSection('courses')">Courses</button>
+      <button class="mobile-contact" onclick="goToSection('contact')">Contact</button>
+    </div>
+  </nav>
+
+  <section id="home" class="hero">
+
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>
+        Building reliable cloud infrastructure,<br>
+        one deployment at a time.
+      </h1>
+    </div>
+
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="about-container">
+
+      <h1 class="about-title">About</h1>
+
+      <p class="about-subtitle">
+        This site is a home base for cloud and DevOps work — practical guides, hands-on
+        courses, and consulting focused on building infrastructure that is reliable,
+        secure, and simple to operate. The goal is to make cloud adoption straightforward,
+        one well-tested change at a time.
+      </p>
+
+      <div class="about-grid">
+
+        <div class="about-card">
+          <i class="fa-solid fa-briefcase"></i>
+          <h3>Cloud Consulting</h3>
+          <p>
+            Modern cloud solutions on AWS and Azure — helping teams scale,
+            secure, and optimize their infrastructure.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <i class="fa-solid fa-book-open"></i>
+          <h3>Training</h3>
+          <p>
+            Hands-on training in AWS, DevOps, Kubernetes, CI/CD pipelines, and cloud automation.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <i class="fa-solid fa-pen-nib"></i>
+          <h3>Written Guides</h3>
+          <p>
+            Practical, high-impact cloud and DevOps content for engineers at any level.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <i class="fas fa-user-tie"></i>
+          <h3>Community</h3>
+          <p>
+            A space for cloud and DevOps practitioners to learn from real, working examples.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services-section">
+
+    <div class="services-container">
+
+      <!-- Header -->
+      <div class="services-header">
+        <span class="services-tag">Services</span>
+        <div class="services-line"></div>
+        <h2>What We Offer</h2>
+        <p>
+          Comprehensive solutions to accelerate your cloud and DevOps transformation
+        </p>
+      </div>
+
+      <!-- Cards -->
+      <div class="services-grid">
+
+        <!-- Card 1 -->
+        <div class="service-card">
+          <span class="badge blue">Most Popular</span>
+
+          <div class="icon blue">
+            <i class="fa-solid fa-cloud"></i>
+          </div>
+
+          <h3>Courses on DevOps</h3>
+          <p>
+            Hands-on, industry-ready courses designed to upskill learners in Cloud,
+            DevOps, automation, and modern infrastructure practices.
+          </p>
+
+          <ul>
+            <li>AWS, Azure & GCP Fundamentals</li>
+            <li>Kubernetes & Docker Mastery</li>
+            <li>CI/CD Pipeline Implementation</li>
+            <li>Infrastructure as Code (Terraform)</li>
+            <li>Real-world Projects & Labs</li>
+          </ul>
+
+          <a href="#courses" class="service-btn">
+            Learn More →
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="service-card">
+          <span class="badge yellow">Popular Track</span>
+
+          <div class="icon yellow">
+            <i class="fa-solid fa-book-open"></i>
+          </div>
+
+          <h3>Guides & Resources</h3>
+          <p>
+            Deeply practical guides focused on DevOps concepts, real-world implementations,
+            and career guidance for aspiring cloud engineers.
+          </p>
+
+          <ul>
+            <li>Comprehensive DevOps Guides</li>
+            <li>Real-world Case Studies</li>
+            <li>Career Development Strategies</li>
+            <li>Best Practices & Patterns</li>
+            <li>Interview Preparation</li>
+          </ul>
+
+          <a href="#about" class="service-btn">
+            Learn More →
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="service-card">
+          <span class="badge blue">Enterprise Grade</span>
+
+          <div class="icon blue">
+            <i class="fa-solid fa-users"></i>
+          </div>
+
+          <h3>Consulting Services</h3>
+          <p>
+            Helping teams with cloud solution architecture,
+            DevOps adoption, infrastructure modernization, and technology strategy.
+          </p>
+
+          <ul>
+            <li>Cloud Migration Strategy</li>
+            <li>DevOps Transformation</li>
+            <li>Architecture Design & Review</li>
+            <li>Cost Optimization</li>
+            <li>Team Training & Mentorship</li>
+          </ul>
+
+          <a href="#contact" class="service-btn">
+            Learn More →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- COURSES -->
+  <section id="courses">
+    <h2 class="courses-title">Courses</h2>
+
+    <div class="courses-grid">
+
+      <div class="course-card">
+        <h3>Cloud Fundamentals</h3>
+        <p class="duration">Duration: 10 hours</p>
+        <span class="badge live">Self-paced</span>
+        <a href="#contact">Learn More →</a>
+      </div>
+
+      <div class="course-card">
+        <h3>DevOps Pipelines & Automation</h3>
+        <p class="duration">Duration: 15 hours</p>
+        <span class="badge live">Self-paced</span>
+        <a href="#contact">Learn More →</a>
+      </div>
+
+      <div class="course-card">
+        <h3>Infrastructure as Code with Terraform</h3>
+        <p class="duration">Duration: 8 hours</p>
+        <span class="badge live">Self-paced</span>
+        <a href="#contact">Learn More →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section">
+
+    <div class="contact-container">
+
+      <div class="contact-header">
+        <span>Get In Touch</span>
+        <h2>Let's Start Your Cloud Journey</h2>
+        <p>
+          Ready to transform your skills or business? Get in touch anytime.
+        </p>
+      </div>
+
+      <!-- Grid -->
+      <div class="contact-grid">
+
+        <!-- Contact Info Card -->
+        <div class="contact-card-dark">
+          <h3>Contact Information</h3>
+
+          <div class="contact-item">
+            <div class="icon-box yellow">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <small>Email</small>
+              <p>hello@example.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon-box yellow">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <small>Location</small>
+              <p>Global Remote Services</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Response -->
+        <div class="contact-card-yellow">
+          <h3>Quick Response</h3>
+          <p>
+            We typically respond within 24 hours.
+            For urgent inquiries, please contact us directly via email.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <div class="footer-grid">
+
+        <!-- BRAND -->
+        <div class="footer-brand">
+          <span class="brand-text">Portfolio</span>
+
+          <p>
+            Cloud and DevOps expertise through courses, guides, and consulting.
+          </p>
+        </div>
+
+        <!-- SERVICES -->
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#services">Cloud Courses</a></li>
+            <li><a href="#services">Guides & Resources</a></li>
+            <li><a href="#services">Consulting</a></li>
+            <li><a href="#services">Corporate Training</a></li>
+          </ul>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>

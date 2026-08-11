@@ -1,0 +1,43 @@
+name: Deploy site
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  id-token: write
+  contents: read
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials via OIDC
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::284495578524:role/portfolio-site-adri-github-actions
+          aws-region: us-east-1
+
+      - name: Sync site to S3
+        run: |
+          aws s3 sync . s3://portfolio-site-adri-site \
+            --exclude "terraform/*" \
+            --exclude ".git/*" \
+            --exclude ".github/*" \
+            --exclude "*.md" \
+            --exclude ".claude/*" \
+            --delete
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id E2GHJPP36GQ6Z0 \
+            --paths "/*"
